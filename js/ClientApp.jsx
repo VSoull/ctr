@@ -1,7 +1,10 @@
-const MyTitle = function(props) {
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const MyTitle = function MyTitle(props) {
   return React.createElement('div', { style: { color: props.color } }, props.title);
 };
-const MyFirstComponent = function() {
+const MyFirstComponent = function MyFirstComponent() {
   return React.createElement(
     'div',
     null,
