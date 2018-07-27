@@ -1,9 +1,9 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: "./js/ClientApp.jsx",
-  devtool: "cheep-eval-source-map",
+  entry: './js/ClientApp.jsx',
+  devtool: 'cheap-eval-source-map',
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
@@ -13,7 +13,7 @@ module.exports = {
     historyApiFallback: true
   },
   resolve: {
-    extensions: ['.js','.jsx', '.json']
+    extensions: ['.js', '.jsx', '.json']
   },
   stats: {
     colors: true,
@@ -34,4 +34,4 @@ module.exports = {
       }
     ]
   }
-}
+};
