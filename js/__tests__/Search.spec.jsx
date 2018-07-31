@@ -11,10 +11,10 @@ test('Search renders correctly', () => {
 
 test('Search should render correct amount of shows', () => {
   const component = shallow(<Search />);
-  expect(preload.shows.length).toEqual(component.find(ShowCard).length);
+  expect(component.find(ShowCard).length).toEqual(preload.shows.length);
 });
 
-test('Search should render correct amount of show based on search term', () => {
+test('Search should render correct amount of shows based on search term', () => {
   const searchWord = 'black';
   const component = shallow(<Search />);
   component.find('input').simulate('change', { target: { value: searchWord } });
